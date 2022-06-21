@@ -19,7 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Cairo", sans-serif;
+  font-family: 'Cairo', sans-serif;
 }
 @media (max-width: 367px) {
   body {
@@ -91,6 +91,18 @@ a {
 .secbtn:hover {
   background-color: var(--gray-dark);
 }
+/* scroll to top */
+.scrollTop {
+  position: fixed;
+  bottom: 30px;
+  right: -80px;
+  z-index: 10;
+  color: white;
+  margin-inline: 20px;
+}
+.scrollTop.show {
+  right: 10px;
+}
 /* buttons */
 /* main-title */
 .main-title {
@@ -106,8 +118,6 @@ a {
 }
 
 /* main-title */
-/* Reuseabile components */
-
 
 /* Start Navbar */
 .header {
@@ -164,7 +174,7 @@ a {
   overflow: hidden;
 }
 .header .main-nav > li > a::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 5px;
@@ -314,6 +324,7 @@ a {
   height: 100%;
   background-color: var(--main-color);
   z-index: 1;
+  transition: 0.8s all;
 }
 /* End Skills */
 /* My skills */
@@ -331,12 +342,13 @@ a {
 }
 .card {
   background-color: var(--bg-color);
-  box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 10%), 0px 2px 4px 0px rgb(0 0 0 / 10%);
+  box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 10%),
+    0px 2px 4px 0px rgb(0 0 0 / 10%);
   padding: 10px;
   max-height: 130px;
-  transition: .1s ease-in;
+  transition: 0.1s ease-in;
 }
-@media (max-width:991px) and (min-width:767px) {
+@media (max-width: 991px) and (min-width: 767px) {
   .card {
     max-height: 160px;
   }
@@ -367,7 +379,6 @@ a {
 }
 /* Experience */
 
-
 /* Start Gallery */
 .gallery {
   padding-top: var(--main-padding-top);
@@ -388,10 +399,10 @@ a {
   transition: var(--main-transition);
   position: relative;
   overflow: hidden;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 /* Intro text */
-.intro{
+.intro {
   position: absolute;
   top: 300px;
   left: 0;
@@ -399,72 +410,72 @@ a {
   text-align: center;
   height: 100%;
   width: 100% !important;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-.gallery .box:hover .intro{
-  top:200px;
+.gallery .box:hover .intro {
+  top: 200px;
 }
-@media (max-width:1399px) {
-  .intro{
+@media (max-width: 1399px) {
+  .intro {
     top: 240px;
   }
-  .gallery .box:hover .intro{
-    top:160px;
+  .gallery .box:hover .intro {
+    top: 160px;
   }
 }
-@media (max-width:1199px) {
-  .intro{
+@media (max-width: 1199px) {
+  .intro {
     top: 340px;
   }
-  .gallery .box:hover .intro{
-    top:260px;
+  .gallery .box:hover .intro {
+    top: 260px;
   }
 }
-@media (max-width:991px) {
-  .intro{
+@media (max-width: 991px) {
+  .intro {
     top: 240px;
   }
-  .gallery .box:hover .intro{
-    top:140px;
+  .gallery .box:hover .intro {
+    top: 140px;
   }
 }
-@media (max-width:767px) {
-  .intro{
+@media (max-width: 767px) {
+  .intro {
     top: 410px;
   }
-  .gallery .box:hover .intro{
-    top:330px;
+  .gallery .box:hover .intro {
+    top: 330px;
   }
 }
-@media (max-width:669px) {
-  .intro{
+@media (max-width: 669px) {
+  .intro {
     top: 330px !important;
   }
-  .gallery .box:hover .intro{
-    top:30px;
+  .gallery .box:hover .intro {
+    top: 30px;
   }
 }
-@media (max-width:600px) {
-  .intro{
+@media (max-width: 600px) {
+  .intro {
     top: 180px !important;
   }
-  .gallery .box:hover .intro{
-    top:30px;
+  .gallery .box:hover .intro {
+    top: 30px;
   }
 }
 
-.intro h1{
-color: var(--gray-color);
-text-align: center;
-margin: auto;
-margin-block: 20px;
-font-size: 30px;
-margin-bottom: 30px;
+.intro h1 {
+  color: var(--gray-color);
+  text-align: center;
+  margin: auto;
+  margin-block: 20px;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
-.intro p{
-color: var(--main-color);
-font-size: 15px;
-padding: 5px;
+.intro p {
+  color: var(--main-color);
+  font-size: 15px;
+  padding: 5px;
 }
 
 /* Intro text */
@@ -473,7 +484,7 @@ padding: 5px;
   overflow: hidden;
 }
 .gallery .box .image::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -514,7 +525,7 @@ padding: 5px;
   position: relative;
 }
 .services .box::before {
-  content: "";
+  content: '';
   left: 50%;
   transform: translateX(-50%);
   height: 3px;
@@ -549,7 +560,7 @@ padding: 5px;
   text-align: right;
 }
 .services .box .info::before {
-  content: "";
+  content: '';
   position: absolute;
   background-color: var(--main-color);
   color: white;
@@ -579,7 +590,7 @@ padding: 5px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
 }
-@media (min-width:1399px) {
+@media (min-width: 1399px) {
   .pricing .container {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
@@ -594,7 +605,7 @@ padding: 5px;
 }
 .pricing .box::before,
 .pricing .box::after {
-  content: "";
+  content: '';
   width: 0;
   height: 50%;
   background-color: #f6f6f6;
@@ -631,7 +642,7 @@ padding: 5px;
   width: 40px;
 }
 .pricing .box.popular .label::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   right: 0;
@@ -670,8 +681,8 @@ padding: 5px;
   border-top: 1px solid #eee;
 }
 .pricing .box ul li::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f00c";
+  font-family: 'Font Awesome 5 Free';
+  content: '\f00c';
   margin-right: 10px;
   font-weight: 900;
   color: var(--main-color);
@@ -822,15 +833,15 @@ padding: 5px;
   transition: var(--main-transition);
 }
 .footer .box .social .linkedin:hover {
-  background-color: #1BC6FC;
+  background-color: #1bc6fc;
   color: white;
 }
 .footer .box .social .behance:hover {
-  background-color: #1BC6FC;
+  background-color: #1bc6fc;
   color: white;
 }
 .footer .box .social .instagram:hover {
-  background-color: #1BC6FC;
+  background-color: #1bc6fc;
   color: white;
 }
 .footer .box .text {
@@ -855,8 +866,8 @@ padding: 5px;
   transition: var(--main-transition);
 }
 .footer .box .links li a::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\F101";
+  font-family: 'Font Awesome 5 Free';
+  content: '\F101';
   font-weight: 900;
   margin-right: 10px;
   color: var(--main-color);
@@ -916,19 +927,17 @@ padding: 5px;
   }
 }
 @keyframes up-and-down {
-  0%{
-
+  0% {
     transform: translateY(0);
   }
-  50%{
+  50% {
     transform: translateY(20px);
   }
-  75%{
+  75% {
     transform: translateY(-20px);
   }
-  100%{
+  100% {
     transform: translateY(0);
-
   }
 }
 /* Key frame */
