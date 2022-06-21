@@ -28,8 +28,8 @@ body {
 }
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 a {
   text-decoration: none !important;
@@ -150,6 +150,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 !important;
 }
 @media (max-width: 767px) {
   .header .main-nav {
