@@ -1,4 +1,4 @@
-/* Start Global Rule */
+/* Start Global Rules */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -19,7 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Cairo", sans-serif;
+  font-family: 'Cairo', sans-serif;
 }
 @media (max-width: 367px) {
   body {
@@ -174,7 +174,7 @@ a {
   overflow: hidden;
 }
 .header .main-nav > li > a::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 5px;
@@ -484,7 +484,7 @@ a {
   overflow: hidden;
 }
 .gallery .box .image::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -525,7 +525,7 @@ a {
   position: relative;
 }
 .services .box::before {
-  content: "";
+  content: '';
   left: 50%;
   transform: translateX(-50%);
   height: 3px;
@@ -560,7 +560,7 @@ a {
   text-align: right;
 }
 .services .box .info::before {
-  content: "";
+  content: '';
   position: absolute;
   background-color: var(--main-color);
   color: white;
@@ -605,7 +605,7 @@ a {
 }
 .pricing .box::before,
 .pricing .box::after {
-  content: "";
+  content: '';
   width: 0;
   height: 50%;
   background-color: #f6f6f6;
@@ -642,7 +642,7 @@ a {
   width: 40px;
 }
 .pricing .box.popular .label::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   right: 0;
@@ -681,8 +681,8 @@ a {
   border-top: 1px solid #eee;
 }
 .pricing .box ul li::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f00c";
+  font-family: 'Font Awesome 5 Free';
+  content: '\f00c';
   margin-right: 10px;
   font-weight: 900;
   color: var(--main-color);
@@ -866,8 +866,8 @@ a {
   transition: var(--main-transition);
 }
 .footer .box .links li a::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\F101";
+  font-family: 'Font Awesome 5 Free';
+  content: '\F101';
   font-weight: 900;
   margin-right: 10px;
   color: var(--main-color);
